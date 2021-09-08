@@ -31,59 +31,24 @@
      <value>134217728</value>
 </property>
     <property>
-        <name>dfs.encrypt.data.transfer</name>
-        <value>true</value>
-    </property>
-    <property>
         <name>dfs.block.access.token.enable</name>
         <value>true</value>
 </property>
   <property>
-    <name>dfs.encrypt.data.transfer.algorithm</name>
-    <value>3des</value>
+    <name>dfs.namenode.https-address</name>
+    <value>0.0.0.0:50470</value>
   </property>
   <property>
-    <name>dfs.encrypt.data.transfer.cipher.suites</name>
-    <value>AES/CTR/NoPadding</value>
+    <name>dfs.namenode.rpc-address</name>
+    <value>0.0.0.0:8020</value>
   </property>
   <property>
-    <name>dfs.encrypt.data.transfer.cipher.key.bitlength</name>
-    <value>256</value>
-  </property>
-    <property>
-    <name>dfs.data.transfer.protection</name>
-    <value>privacy</value>
-  </property>
-  <!-- <property>
-    <name>dfs.http.policy</name>
-    <value>HTTPS_ONLY</value>
-  </property> -->
-  <property>
-    <name>ssl.server.keystore.password</name>
-    <value>a123456</value>
-  </property>
-  <property>
-    <name>ssl.server.truststore.password</name>
-    <value>a123456</value>
-  </property>
-  <property>
-    <name>ssl.server.truststore.location</name>
-    <value>/home/hduser/truststore</value>
-  </property>
-  <property>
-    <name>ssl.server.keystore.location</name>
-    <value>/home/hduser/.keystore</value>
+    <name>dfs.datanode.https.address</name>
+    <value>0.0.0.0:50475</value>
   </property>
   <property>
   <name>dfs.namenode.rpc-bind-host</name>
   <value>0.0.0.0</value>
-  <description>
-    The actual address the RPC server will bind to. If this optional address is
-    set, it overrides only the hostname portion of dfs.namenode.rpc-address.
-    It can also be specified per name node or name service for HA/Federation.
-    This is useful for making the name node listen on all interfaces by
-    setting it to 0.0.0.0.
-  </description>
 </property>
 </configuration>
 
